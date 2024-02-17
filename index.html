@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light" lang="en">
+<html class="scroll-smooth" data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,8 @@
       theme: {
         extend: {
           colors: {
-            
+            'primary-color': '#1DD100',
+            'border-color': '#03071233',
           }
         }
       }
@@ -70,50 +71,51 @@
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
                     <h1 class="mb-5 text-3xl lg:text-5xl lg:whitespace-nowrap font-bold">End-to-End Travel with</h1>
-                    <h1 class="text-3xl lg:text-5xl font-bold mb-5 text-[#1DD100]">P Paribahan</h1>
+                    <h1 class="text-3xl lg:text-5xl font-bold mb-5 text-primary-color">P Paribahan</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn font-bold bg-[#1DD100]">Get Started</button>
+                    <a href="#get-ticket" class="btn font-bold bg-primary-color">Get Started</a>
                   </div>
                 </div>
               </div>
         </section>
         <section class="my-36 space-y-8">
             <h1 class="font-black text-center text-3xl">Best offers for you</h1>
-            <div class="flex flex-col lg:flex-row  gap-6">
+            <div class="flex flex-col lg:flex-row  gap-5">
                 <!-- 15% discount card -->
                 <div class="flex lg:w-1/2">
-                    <div class="card rounded-r-none w-full relative bg-[#FFBF0F]  bg-base-100 shadow-xl">
+                    <div class="card rounded-r-none w-full bg-[#FFBF0F]  bg-base-100 shadow-xl">
                         <div class="card-body">
                           <h2 class="card-title text-3xl font-black">15% OFF</h2>
                           <p class="font-black">on your next purchase</p>
                           <p>use by January 2024</p>
                         </div>
-                        <div class="absolute h-full w-full left-[90%] translate-x-5 z-30">
-                            <img class="h-full" src="images/cupon-devider.png" alt="">
-                        </div>
                     </div>
-                    <div class="card rounded-l-none bg-[#FFBF0F] bg-base-100">
+                    
+                    <div class="card w-[270px] relative md:w-80 lg:w-96 rounded-l-none bg-[#FFBF0F] bg-base-100">
+                      <div class="absolute h-full w-full z-30">
+                        <img class="h-full" src="images/cupon-devider.png" alt="">
+                     </div>
                         <div class="card-body">
-                          <h2 class="card-title text-3xl font-black">NEW15</h2>
+                          <h2 class="card-title md:text-2xl text-md lg:text-3xl font-black">NEW15</h2>
                           <p class="font-black">Coupon Code</p>
                         </div>
                     </div>
                 </div>
                 <!-- 20% discount card -->
                 <div class="flex  lg:w-1/2">
-                    <div class="card rounded-r-none w-full relative bg-[#F78C9C] bg-base-100 shadow-xl">
+                    <div class="card rounded-r-none w-full bg-[#F78C9C] bg-base-100 shadow-xl">
                         <div class="card-body">
                           <h2 class="card-title text-3xl font-black">20% OFF</h2>
                           <p class="font-black">on your next purchase</p>
                           <p>use by January 2024</p>
                         </div>
-                        <div class="absolute h-full w-full left-[90%] translate-x-5 z-30">
-                            <img class="h-full" src="images/cupon-devider.png" alt="">
-                        </div>
                     </div>
-                    <div class="card rounded-l-none bg-[#F78C9C] bg-base-100">
+                    <div class="card w-[270px] md:w-80 lg:w-96 relative rounded-l-none bg-[#F78C9C] bg-base-100">
+                      <div class="absolute h-full w-full z-30">
+                        <img class="h-full" src="images/cupon-devider.png" alt="">
+                    </div>
                         <div class="card-body">
-                          <h2 class="card-title text-3xl font-black">Couple 20</h2>
+                          <h2 class="card-title md:text-2xl text-md lg:text-3xl font-black">Couple 20</h2>
                           <p class="font-black">Coupon Code</p>
                         </div>
                     </div>
@@ -122,8 +124,198 @@
             <button class="btn btn-outline btn-success mx-auto block">See All Offers</button>
         </section>
     </header>
-    <main>
-
+    <!-- main area  -->
+    <main id="get-ticket" class="bg-[#F7F8F8] border-t-2 rounded-t-[40px] border-[#1DD100]">
+      <section class="mt-24 max-w-[1440px] w-10/12 mx-auto">
+          <h1 class="font-bold mb-5 text-center text-3xl">P.H Paribahan</h1>
+          <p class="lg:w-1/2 mx-auto text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          <!-- card -->
+          <section class="">
+            <div class="flex flex-col-reverse lg:flex-row mt-16">
+              <div class="card rounded-r-none w-full bg-white  bg-base-100 shadow-xl">
+                  <div class="card-body">
+                    <div class="flex flex-col text-center lg:text-left mx-auto lg:m-0 lg:flex-row gap-5 justify-between">
+                      <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="mx-auto lg:m-0">
+                          <img src="images/bus-logo.png" alt="">
+                        </div>
+                        <div class="">
+                          <h4 class="text-2xl font-bold">Greenline Paribahan</h4>
+                          <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <button class="btn whitespace-nowrap bg-[#1DD1001A] border-1 border-[#1DD10066]"><img src="images/seat-green.png" alt=""><span>40</span> Seats left</button>
+                      </div>
+                    </div>
+                    <!-- static card -->
+                    <div class="mt-10 space-y-7  bg-white p-10">
+                      <div class="flex justify-between border-b-2 border-dashed border-b-border-color pb-5">
+                        <p class="">Route</p>
+                        <p class="text-right">Dhaka - Sylhet</p>
+                      </div>
+                      <div class="flex justify-between border-b-2 border-dashed border-b-border-color pb-5">
+                        <p class="">Departure Time</p>
+                        <p class="text-right">9:00 PM</p>
+                      </div>
+                      <div class="flex justify-center flex-col lg:flex-row gap-5">
+                        <button class="btn">Boarding Point - Laxmipur</button>
+                        <button class="btn">Dropping Point - Bogura</button>
+                        <button class="btn">Est. Time - 11 Hour</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card lg:w-2/5 relative rounded-l-none bg-white bg-base-100">
+                <div class="absolute hidden lg:block h-full w-full">
+                  <img class="h-full" src="images/info-devider.png" alt="">
+                </div>
+                  <div class="card-body">
+                    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                      <img class="w-14 mx-auto" src="images/fare.png" alt="">
+                      <h2 class="card-title mx-auto text-3xl font-black">550 Taka</h2>
+                      <p class="font-black">Per Seat</p>
+                  </div>
+                    </div>
+              </div>
+           </div>
+          </section>
+          <!-- ticket card -->
+          <section class="flex flex-col lg:flex-row gap-5 mt-5 bg-white rounded-2xl">
+              <div class="lg:w-1/2 space-y-4 border-r-2 border-dashed border-r-border-color p-8">
+                <h4 class="font-semibold border-b-2 pb-4 border-dashed border-b-border-color text-xl">Select Your Seat</h4>
+                <div class="border-b-2 pb-4 border-dashed border-b-border-color flex justify-between">
+                  <div class="flex gap-3">
+                    <img src="images/seat-gray.png" alt="" srcset="">
+                    <p>Available</p>
+                  </div>
+                  <div class="flex gap-3">
+                    <img src="images/seat-green-filled.png" alt="" srcset="">
+                    <p>Selected</p>
+                  </div>
+                </div>
+                <!-- ticket button -->
+                <div class="flex justify-end">
+                  <img class="kbd px-8 py-3" src="images/tabler-icon-steering-wheel.png" alt="">
+                </div>
+                <div class="flex flex-col lg:flex-row gap-20">
+                  <!-- left Side -->
+                  <div class="space-y-5">
+                    <div class="flex items-center gap-8">
+                      <h1 class="">A</h1>
+                      <kbd class="kbd px-8">A1</kbd>
+                      <kbd class="kbd px-8">A2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">B</h1>
+                      <kbd class="kbd px-8">B1</kbd>
+                      <kbd class="kbd px-8">B2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">C</h1>
+                      <kbd class="kbd px-8">C1</kbd>
+                      <kbd class="kbd px-8">C2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">D</h1>
+                      <kbd class="kbd px-8">D1</kbd>
+                      <kbd class="kbd px-8">D2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">E</h1>
+                      <kbd class="kbd px-8">E1</kbd>
+                      <kbd class="kbd px-8">E2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">F</h1>
+                      <kbd class="kbd px-8">F1</kbd>
+                      <kbd class="kbd px-8">F2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">G</h1>
+                      <kbd class="kbd px-8">G1</kbd>
+                      <kbd class="kbd px-8">G2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">H</h1>
+                      <kbd class="kbd px-8">H1</kbd>
+                      <kbd class="kbd px-8">H2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">I</h1>
+                      <kbd class="kbd px-8">I1</kbd>
+                      <kbd class="kbd px-8">I2</kbd>
+                   </div>
+                    <div class="flex items-center gap-8">
+                      <h1 class="">J</h1>
+                      <kbd class="kbd px-8">J1</kbd>
+                      <kbd class="kbd px-8">J2</kbd>
+                   </div>
+                  </div>
+                      <!-- right side -->
+                  
+                    <div class="space-y-5 mx-auto lg:mx-0">
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">A3</kbd>
+                        <kbd class="kbd px-8">A4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">B3</kbd>
+                        <kbd class="kbd px-8">B4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">C3</kbd>
+                        <kbd class="kbd px-8">C4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">D3</kbd>
+                        <kbd class="kbd px-8">D4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">E3</kbd>
+                        <kbd class="kbd px-8">E4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">F3</kbd>
+                        <kbd class="kbd px-8">F4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">G3</kbd>
+                        <kbd class="kbd px-8">G4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">H3</kbd>
+                        <kbd class="kbd px-8">H4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">I3</kbd>
+                        <kbd class="kbd px-8">I4</kbd>
+                      </div>
+                      <div class="flex items-center gap-8">
+                        <kbd class="kbd px-8">J3</kbd>
+                        <kbd class="kbd px-8">J4</kbd>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="lg:w-1/2 p-8">
+                <h4 class="font-semibold border-b-2 pb-4 border-dashed border-b-border-color text-xl">Select Your Seat</h4>
+                <!-- show price section -->
+                <div class="bg-[#F7F8F8] mt-10 p-5 rounded-xl">
+                  <div class="flex justify-between border-b-2 pb-4 border-dashed border-b-border-color">
+                    <p>Seat<span class="bg-primary-color text-white px-3 mx-2 rounded-full">0</span></p>
+                    <p>Class</p>
+                    <p>Price</p>
+                  </div>
+                  <!-- change dynamic -->
+                  <div class="flex justify-between border-b-2 pb-4 border-dashed border-b-border-color">
+                    <!-- js code -->
+                  </div>
+                  
+                </div>
+              </div>
+          </section>
+      </section>
     </main>
     <footer>
 
