@@ -7,7 +7,8 @@ let totalSeat = getElementByNumber("Seat");
 const perTicketPrice = getElementByNumber("per-ticket-Price");
 // get coupon btn
 const CouponBtn = document.getElementById('Coupon-btn');
-
+// number input passed
+let passed = '';
 for (const button of ticketButtons) {
   button.addEventListener("click", function (event) {
     const element = event.target;
@@ -50,6 +51,15 @@ for (const button of ticketButtons) {
         CouponBtn.removeAttribute('disabled');
       }
     }
+
+
+  //  number validation check Enabled modal button
+    const passedNumber = parseInt(passed);
+    if (!isNaN(passedNumber) && totalSeat  > 0) {
+        const next = document.getElementById('next');
+        next.removeAttribute('disabled');
+    }
+    
 
     // set grand-total
     setElementById("grand-total", totalPrice);
@@ -100,9 +110,9 @@ CouponBtn.addEventListener("click", function () {
   }
 });
 
-// number validation check
+// number validation check Enabled modal button
 document.getElementById('number').addEventListener('keyup', function(e){
-    const passed = e.target.value;
+     passed = e.target.value;
     const passedNumber = parseInt(passed);
     if (!isNaN(passedNumber) && totalSeat  > 0) {
         const next = document.getElementById('next');
